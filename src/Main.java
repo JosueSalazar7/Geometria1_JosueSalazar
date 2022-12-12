@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int opcion, opcion1, opcion2, opcion3, repeticion;
-        Metodos m = new Metodos();
+        Geometria_Josue geo = new Geometria_Josue();
         System.out.println("****MENU PRINCIPAL****");
         System.out.println("\n1. Areas");
         System.out.println("2. Perimetros");
@@ -29,19 +29,19 @@ public class Main {
                     switch (opcion1) {
                         case 1:
                             System.out.println("\nOpcion escogida: Area del cuadrado");
-                            m.areacuadrado();
+                            geo.areacuadrado();
                             break;
                         case 2:
                             System.out.println("\nOpcion escogida: Area del Rectangulo");
-                            m.arearectangulo();
+                            geo.arearectangulo();
                             break;
                         case 3:
                             System.out.println("\nOpcion escogida: Area del triangulo");
-                            m.areatriangulo();
+                            geo.areatriangulo();
                             break;
                         case 4:
                             System.out.println("\nOpcion escogida: Area del circulo");
-                            m.areacirculo();
+                            geo.areacirculo();
                             break;
                     }
                     System.out.print("\nDesea calcular otra area 1. SI : ");
@@ -66,19 +66,19 @@ public class Main {
                     switch (opcion2) {
                         case 1:
                             System.out.println("\nOpcion escogida: Perimetro del cuadrado");
-                            m.perimetrocuadrado();
+                            geo.perimetrocuadrado();
                             break;
                         case 2:
                             System.out.println("\nOpcion escogida: Perimetro del rectangulo");
-                            m.perimetrorectangulo();
+                            geo.perimetrorectangulo();
                             break;
                         case 3:
                             System.out.println("\nOpcion escogida: Perimetro del triangulo");
-                            m.perimetrotriangulo();
+                            geo.perimetrotriangulo();
                             break;
                         case 4:
                             System.out.println("\nOpcion escogida: Perimetro del circulo");
-                            m.perimetrocirculo();
+                            geo.perimetrocirculo();
                             break;
                     }
                     System.out.print("\nDesea calcular otro perimetro 1.Si: ");
