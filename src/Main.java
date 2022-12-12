@@ -45,7 +45,7 @@ public class Main {
                             m.areacirculo(num1, resultado);
                             break;
                     }
-                    System.out.print("Desea calcular otra area 1. SI : ");
+                    System.out.print("\nDesea calcular otra area 1. SI : ");
                     repeticion = sc.nextInt();
                     System.out.println();
                 } while (repeticion == 1);
