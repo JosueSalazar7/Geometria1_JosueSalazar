@@ -5,7 +5,8 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int opcion, opcion1, opcion2, opcion3, repeticion;
         Geometria_Josue geo = new Geometria_Josue();
-        System.out.println("****MENU PRINCIPAL****");
+
+        System.out.println("\u001B[32m****MENU PRINCIPAL****");
         System.out.println("\n1. Areas");
         System.out.println("2. Perimetros");
         System.out.println("3. Volumenes");
@@ -17,7 +18,7 @@ public class Main {
             case 1:
                 do {
                     System.out.println("\nOpcion escogida: Areas");
-                    System.out.println("\n****SUBMENU AREAS****");
+                    System.out.println("\n\t-/-/-/-/ SUBMENU AREAS -/-/-/-/");
                     System.out.println("\n1. Area del cuadrado");
                     System.out.println("2. Area del rectangulo");
                     System.out.println("3. Area del trianuglo");
@@ -54,7 +55,7 @@ public class Main {
                 do {
                     System.out.println("\nOpcion escogida: Perimetro");
 
-                    System.out.println("\n****SUBMENU PERIMETRO****");
+                    System.out.println("\u001B[31m\n****SUBMENU PERIMETRO****");
                     System.out.println("\n1. Perimetro del cuadrado");
                     System.out.println("2. Perimetro del rectangulo");
                     System.out.println("3. Perimetro del trianuglo");
