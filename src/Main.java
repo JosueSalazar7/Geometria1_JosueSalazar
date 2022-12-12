@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int opcion, opcion1, opcion2, opcion3, repeticion;
-        double num1 = 0, resultado = 0, num2 = 0;
+        double num1 = 0, resultado = 0, num2 = 0, num3 = 0;
         Metodos m = new Metodos();
         System.out.println("****MENU PRINCIPAL****");
         System.out.println("\n1. Areas");
@@ -17,7 +17,7 @@ public class Main {
         switch (opcion) {
             case 1:
                 do {
-                    System.out.println("\bOpcion escogida: Areas");
+                    System.out.println("\nOpcion escogida: Areas");
                     System.out.println("\n****SUBMENU AREAS****");
                     System.out.println("\n1. Area del cuadrado");
                     System.out.println("2. Area del rectangulo");
@@ -52,35 +52,40 @@ public class Main {
 
                 break;
             case 2:
-                System.out.println("\nOpcion escogida: Perimetro");
-
-                System.out.println("\n****SUBMENU PERIMETRO****");
-                System.out.println("\n1. Perimetro del cuadrado");
-                System.out.println("2. Perimetro del rectangulo");
-                System.out.println("3. Perimetro del trianuglo");
-                System.out.println("4. Perimetro del circulo");
                 do {
-                    System.out.print("\nEscoja el perimetro a calcular: ");
-                    opcion2 = sc.nextInt();
-                } while (opcion2 < 1 || opcion2 > 4);
-                switch (opcion2) {
-                    case 1:
-                        System.out.println("\nOpcion escogida: Perimetro del cuadrado");
+                    System.out.println("\nOpcion escogida: Perimetro");
 
-                        break;
-                    case 2:
-                        System.out.println("\nOpcion escogida: Perimetro del rectangulo");
+                    System.out.println("\n****SUBMENU PERIMETRO****");
+                    System.out.println("\n1. Perimetro del cuadrado");
+                    System.out.println("2. Perimetro del rectangulo");
+                    System.out.println("3. Perimetro del trianuglo");
+                    System.out.println("4. Perimetro del circulo");
+                    do {
+                        System.out.print("\nEscoja el perimetro a calcular: ");
+                        opcion2 = sc.nextInt();
+                    } while (opcion2 < 1 || opcion2 > 4);
+                    switch (opcion2) {
+                        case 1:
+                            System.out.println("\nOpcion escogida: Perimetro del cuadrado");
+                            m.perimetrocuadrado(num1, resultado);
+                            break;
+                        case 2:
+                            System.out.println("\nOpcion escogida: Perimetro del rectangulo");
+                            m.perimetrorectangulo(num1, num2, resultado);
+                            break;
+                        case 3:
+                            System.out.println("\nOpcion escogida: Perimetro del triangulo");
+                            m.perimetrotriangulo(num1, num2, num3, resultado);
+                            break;
+                        case 4:
+                            System.out.println("\nOpcion escogida: Perimetro del circulo");
+                            m.perimetrocirculo(num1, resultado);
+                            break;
+                    }
+                    System.out.print("\nDesea calcular otro perimetro 1.Si: ");
+                    repeticion = sc.nextInt();
+                }while(repeticion == 1);
 
-                        break;
-                    case 3:
-                        System.out.println("\nOpcion escogida: Perimetro del triangulo");
-
-                        break;
-                    case 4:
-                        System.out.println("\nOpcion escogida: Perimetro del circulo");
-
-                        break;
-                }
                 break;
             case 3:
                 System.out.println("\nOpcion escogida: Volumenes");
