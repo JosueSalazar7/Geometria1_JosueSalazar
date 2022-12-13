@@ -174,5 +174,63 @@ public class Geometria_Josue{
             setPerimetro(resultado);
             System.out.println("\nEl perimetro del circulo es: " + getPerimetro());
         }
+        public  void volumencuadrado(){
+            do {
+                System.out.print("\nIngrese el lado del cuadrado: ");
+                num1 = sc.nextDouble();
+                if(num1 < 0){
+                    System.out.println("\nEl dato ingresado es incorrecto ingrese nuevamente por favor");
+                }
+            }while(num1 < 0);
+            resultado = num1 * num1 * num1;
+            setVolumen(resultado);
+            System.out.println("\nEl del volumen del cubo es: " + getVolumen());
+        }
+        public void volumenrectangulo(){
+        do {
+            System.out.print("\nIngrese el valor del largo del rectangulo: ");
+            num1 = sc.nextDouble();
+            if(num1 < 0){
+                System.out.println("\nEl valor ingresado es incorrecto ingrese nuevamente por favor");
+            }
+        }while (num1 < 0);
+        do {
+            System.out.print("Ingrese el ancho del rectangulo: ");
+            num2 = sc.nextDouble();
+            if(num2 < 0){
+                System.out.println("\nEl valor ingresado es incorrecto ingrese nuevamente por favor");
+            }
+        }while(num2 < 0);
+        do{
+            System.out.print("Ingrese la altura del resctangulo: ");
+            num3 = sc.nextDouble();
+            if (num3 < 0){
+                System.out.println("\nEl valor ingresado es incorrecto ingrese nuevamente por favor");
+            }
+        }while (num3 < 0);
+        resultado = num1 * num2 * num3;
+        setVolumen(resultado);
+            System.out.println("\nEl volumen del rectangulo es: " + getVolumen());
+        }
+        public void volumentriangulo(){
+            do{
+                System.out.print("\nIngrese el valor del lado de la base de la piramide: ");
+                num1 = sc.nextDouble();
+                if (num1 < 0){
+                    System.out.println("\nEl valor ingresado es incorrecto ingrese nuevamente por favor");
+                }
+            }while (num1 < 0);
+            do{
+                System.out.print("Ingrese la altura de la piramide: ");
+                num2 = sc.nextDouble();
+                if (num2<0){
+                    System.out.println("\nEl valor ingresado es incorrecto ingrese nuevamente por favor");
+                }
+            }while (num2<0);
+            num3 = num1 * num1;
+            resultado = (num3 * num2)/3;
+            setVolumen(resultado);
+            System.out.println("\nEl volumen de la piramide es: " + getVolumen());
+        }
     }
 
