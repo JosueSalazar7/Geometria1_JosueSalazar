@@ -39,7 +39,7 @@ public class Geometria_Josue{
 
 
 
-    private double num1, num2, num3, resultado, pi=3.24;
+    private double num1, num2, num3, resultado, pi=3.14;
     public void areacuadrado(){
            do {
                System.out.print("\nIngrese el lado del cuadrado: ");
@@ -231,6 +231,25 @@ public class Geometria_Josue{
             resultado = (num3 * num2)/3;
             setVolumen(resultado);
             System.out.println("\nEl volumen de la piramide es: " + getVolumen());
+        }
+        public void volumencilindro(){
+            do{
+                System.out.print("\nIngrese el valor del radio: ");
+                num1 = sc.nextDouble();
+                if (num1 <0){
+                    System.out.println("\nEl valor ingresado es incorrecto ingrese nuevamente porfavor");
+                }
+            }while (num1 < 0);
+            do{
+                System.out.print("Ingrese la altura del cilindro: ");
+                num2 = sc.nextDouble();
+                if (num2 < 0){
+                    System.out.println("\nEl valor ingresado es incorrecto ingrese nueavamente porfavor");
+                }
+            }while (num2 < 0);
+            resultado = (pi * (num1*num1))*num2;
+            setVolumen(resultado);
+            System.out.println("\nEl volumen del cilindro es: " + getVolumen());
         }
     }
 
